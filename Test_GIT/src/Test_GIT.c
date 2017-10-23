@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("I am from MASTER");
+	printf("Fuck you");
 	return 0;
 }
