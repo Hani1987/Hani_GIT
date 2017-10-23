@@ -20,13 +20,14 @@ void f1()
 
   locate(&esm[0]);
 
-  printf("Salam 32: %c", esm[1]);
+  printf("Salam 32: %c%c", esm[1], esm[2]);
 
 }
 
 void locate(char name[])
 {
-	name[1] ='W';
+	name[1] ='Q';
+	name[2] ='Ü';
 }
 
 
