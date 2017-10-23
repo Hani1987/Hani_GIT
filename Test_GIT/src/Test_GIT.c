@@ -6,7 +6,7 @@ int main(void)
 	int a=1, b=1;
     if(a==b  && a )
 	{
-		printf("Master is Good");
+		printf("Irna is Good");
 	}
 
 	return 0;
