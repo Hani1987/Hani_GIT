@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("Iran");
+	printf("Iran 2");
 	return 0;
 }
