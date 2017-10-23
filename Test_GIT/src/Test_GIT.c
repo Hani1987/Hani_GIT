@@ -3,6 +3,10 @@
 
 int main(void)
 {
-	printf("Master");
+	int a=1, b=1;
+	if(a==b)
+	{
+		printf("Master is Good");
+	}
 	return 0;
 }
