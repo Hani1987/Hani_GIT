@@ -3,6 +3,10 @@
 
 int main(void)
 {
-	printf("Iran 2");
+	int a=1, b=1;
+	if(a==b && a)
+		{
+			printf("Iran is Good");
+		}
 	return 0;
 }
