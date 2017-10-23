@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("Fuck you");
+	printf("HSa you");
 	return 0;
 }
