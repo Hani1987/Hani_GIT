@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("HSa you");
+	printf("I am HANI");
 	return 0;
 }
