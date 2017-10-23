@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("I am HANI");
+	printf("Master");
 	return 0;
 }
