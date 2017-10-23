@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	printf("I am from MASTER 2");
+	printf("I am from MASTER");
 	return 0;
 }
