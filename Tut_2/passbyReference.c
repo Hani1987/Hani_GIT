@@ -20,7 +20,7 @@ void f1()
 
   locate(&esm[0]);
 
-  printf("Salam 32: %c%c", esm[1], esm[2]);
+  printf("Salam 32: %c %c", esm[1], esm[2]);
 
 }
 
