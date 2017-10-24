@@ -21,10 +21,10 @@ void GUI()
   float number_1; float number_2;
 
 
-  printf("Enter Number 1:");
+  printf("Enter First Number:");
   scanf("%f", &number_1);
 
-  printf("Enter Number 2:");
+  printf("Enter Second Number:");
   scanf("%f", &number_2);
 
 

@@ -6,7 +6,8 @@
 int main()
 {
 	int val=9;
-	int *p= &val;
+	int *p;
+	p= &val;
 
 	printf("Before change: %d\n\n", *p);
 
