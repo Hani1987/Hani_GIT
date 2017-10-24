@@ -3,31 +3,35 @@
 #include<conio.h>
 #include<string.h>
 
-void f1();
-void locate(char name[]);
+void GUI();
+void interface(double number);
+void BusinessLogic(double number);
+
 
 int main()
 {
-
-	f1();
+	GUI();
 
     return 0;
 }
 
-void f1()
+void GUI()
 {
-  char esm[10] = "HANIJORFI";
+  double num = -1;
 
-  locate(&esm[0]);
+  interface(&num);
 
-  printf("Salam 32: %c %c", esm[1], esm[2]);
+  printf("Result: %F", num);
 
 }
 
-void locate(char name[])
+void interface(double number)
 {
-	name[1] ='Q';
-	name[2] ='Ü';
+	BusinessLogic(number);
 }
 
+void BusinessLogic(double number)
+{
+   number = 1.35;
+}
 
