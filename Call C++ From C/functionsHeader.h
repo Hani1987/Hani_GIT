@@ -1,11 +1,7 @@
-#ifndef functionsHeader
-#define functionsHeader
+#ifndef FUNCTION_HEADER
+#define FUNCTION_HEADER
 
-extern "C"
-{
+extern "C" void fn_Calculation() {};
 
- void fn_Calculation();
-
-}
 
 #endif
