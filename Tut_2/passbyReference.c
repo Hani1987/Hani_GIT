@@ -33,7 +33,7 @@ void GUI()
 
   Interface( p1,  p2);
 
-  printf("\n\tResult: %0.2f", number_1);
+  printf("\n\tResult: %0.2f", *p1);
 
 }
 
