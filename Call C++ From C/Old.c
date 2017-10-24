@@ -5,6 +5,7 @@
 
 int main()
 {
+   calculate(5.3, 1.202);
 
    return 0;
 }
