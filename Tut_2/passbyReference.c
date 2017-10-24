@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
+#include<math.h>
 #include<string.h>
 
-void GUI();
-void interface(double number);
-void BusinessLogic(double number);
 
+void GUI();
+void Interface(float *number1, float *number2);
+void BusinessLogic(float *number1, float *number2, char ch);
 
 int main()
 {
@@ -17,21 +18,53 @@ int main()
 
 void GUI()
 {
-  double num = -1;
+  float number_1; float number_2;
 
-  interface(&num);
 
-  printf("Result: %F", num);
+  printf("Enter Number 1:");
+  scanf("%f", &number_1);
+
+  printf("Enter Number 2:");
+  scanf("%f", &number_2);
+
+
+  float *p1 = &number_1;
+  float *p2 = &number_2;
+
+  Interface( p1,  p2);
+
+  printf("\n\tResult: %0.2f", number_1);
 
 }
 
-void interface(double number)
+void Interface(float *number1, float *number2)
 {
-	BusinessLogic(number);
+   char op;
+   printf("Enter The Operand:");
+   op = getche();
+
+   BusinessLogic(number1, number2, op);
 }
 
-void BusinessLogic(double number)
+void BusinessLogic(float *number1, float *number2, char ch)
 {
-   number = 43.35;
+	switch(ch)
+	{
+	case '+':
+	  *number1 += *number2;
+	  break;
+	case '*':
+		  *number1 *= *number2;
+		  break;
+	case '-':
+		  *number1 -= *number2;
+		  break;
+	case '/':
+		  *number1 /= *number2;
+		  break;
+
+	default:
+		break;
+	}
 }
 
