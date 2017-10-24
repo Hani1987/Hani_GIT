@@ -32,6 +32,6 @@ void interface(double number)
 
 void BusinessLogic(double number)
 {
-   number = 1.35;
+   number = 43.35;
 }
 
