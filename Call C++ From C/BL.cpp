@@ -20,5 +20,5 @@ int main()
 
 extern FUNCTION_HEADER  void calculate(float num1, float num2)
  {
-    	cout<<"Result= "<< num1 + num2 <<endl;
+   cout<<"\t\nResult= "<< num1 + num2 <<endl;
  }
