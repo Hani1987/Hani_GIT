@@ -54,12 +54,12 @@ int main()
 {
   Student hani(123489, "Test Name", "Test Education", 55, "Test Field");
   hani.ShowData();
-
+  calculate(22.1, 33.1);
 
    return 0;
 }
 
-extern FUNCTION_HEADER  void calculate(float num1, float num2)
+extern FUNCTION_HEADER void calculate(float num1, float num2)
  {
    cout<<"\t\nResult= "<< num1 + num2 <<endl;
  }
