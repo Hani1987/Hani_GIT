@@ -3,5 +3,6 @@
 
 
 void calculate(float num1, float num2);
+void DisplayResult();
 
 #endif
