@@ -5,35 +5,56 @@
 using namespace std;
 
 
-class Human {
+class Human
+{
+
 protected:
 	int i_Id;
-	std::string s_Name;
-	std::string s_Age;
+	string s_Name;
+	int s_Age;
 };
 
-class Student: Human {
+class Student: Human
+{
 
 public:
-	std::string s_Education;
-	std::string s_Field;
+	string s_Education;
+	string s_Field;
+
 	Student();
-	Student(int id, std::string name, std::string educ, std::string age, std::string field);
-    ~Student();
+	Student(int id, string name, string educ, int age, string field);
+
+	~Student();
 	void ShowData();
+
 };
+
+Student::Student(int id, string name, string educ, int age, string field)
+{
+	this->i_Id = id;
+	this->s_Name = name;
+	this->s_Education = educ;
+	this->s_Age = age;
+	this->s_Field = field;
+};
+
+void Student::ShowData()
+{
+  cout << "Student ID: " << this->i_Id <<endl;
+  cout << "Student Name: " << this->s_Name <<endl;
+  cout << "Student Education: " << this->s_Education <<endl;
+  cout << "Student Age: " << this->s_Age <<endl;
+  cout << "Student Field: " << this->s_Field <<endl;
+}
+
+Student::~Student(){};
 
 
 int main()
 {
-   Student hani();
-   Student Ali(135, "Name", "afsd", "sfdg", "orjwg");
+  Student hani(123489, "Test Name", "Test Education", 55, "Test Field");
+  hani.ShowData();
 
-   Ali.ShowData();
-
-
-
-//**************************************************************//
 
    return 0;
 }
