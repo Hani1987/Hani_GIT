@@ -5,22 +5,13 @@
 using namespace std;
 
 
-Student::Student(int id, char name[],  char educ[], int age,  char field[])
+Student::Student(int id, string name, string educ, int age, string field)
 {
 	this->i_Id = id;
 	this->s_Name = name;
 	this->s_Education = educ;
 	this->s_Age = age;
 	this->s_Field = field;
-};
-
-Student::Student(int id)
-{
-	this->i_Id = id;
-	this->s_Name = "Empty";
-	this->s_Education  = "Empty";
-	this->s_Age = "Empty";
-	this->s_Field  = "Empty";
 };
 
 void Student::ShowData()

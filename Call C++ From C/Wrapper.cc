@@ -3,17 +3,9 @@
 
 extern "C"
 {
-CTest *test_new(int id) {
-       Student *t = new Student(id);
-       return (CTest*) *t;
+    CTest *t(int id);
+
+    CTest ShowData() {};
+
 }
 
-void ShowData(const CTest *test_new) {
-	Student *t = (Student *)test_new;
-}
-
-void test_delete(const CTest *test) {
-	Student *t = (Student *)test;
-    delete t;
-  }
-}

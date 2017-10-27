@@ -11,7 +11,6 @@ int main()
   Student hani(35464, "Object Name", "Object Education", 325, "Object Field");
 
   hani.ShowData();
-  Student reza();
 
   return 0;
 }

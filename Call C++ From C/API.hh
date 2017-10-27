@@ -2,16 +2,15 @@ class Student
 {
 	int i_Id;
 	int s_Age;
-	char s_Name[];
-	char s_Education[];
-	char s_Field[];
+	std::string s_Name;
+	std::string s_Education;
+	std::string s_Field;
 
 
 	 //Constructors
 public:
 	Student();
-	Student(int id, char name[],  char educ[], int age,  char field[]);
-	Student(int id);
+	Student(int id, std::string name,  std::string educ, int age,  std::string field);
 	~Student();
 
 	//Methods
