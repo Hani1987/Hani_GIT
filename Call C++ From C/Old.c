@@ -8,11 +8,7 @@ int main()
 {
   cout << "\tTEST C++ Function From C" << endl;
 
-  int num = 99;
-
-  CTest *test(CTest);
-
-  ShowData(test);
+  CTest test = *test_new(CTest(36));
 
   return 0;
 

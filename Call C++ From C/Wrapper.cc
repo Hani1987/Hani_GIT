@@ -1,12 +1,11 @@
 #include "Wrapper.h"
-
 #include "API.hh"
 
 extern "C"
 {
-CTest * test_new(int id) {
+CTest *test_new(int id) {
        Student *t = new Student(id);
-       return (CTest*) t;
+       return (CTest*) *t;
 }
 
 void ShowData(const CTest *test_new) {
