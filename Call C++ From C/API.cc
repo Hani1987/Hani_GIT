@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 Student::Student(int id, string name, string educ, int age, string field)
 {
 	this->i_Id = id;
@@ -14,7 +13,7 @@ Student::Student(int id, string name, string educ, int age, string field)
 	this->s_Field = field;
 };
 
-void Student::ShowData()
+void Student::showData()
 {
   cout << "\n\tStudent ID: " << this->i_Id <<endl;
   cout << "\tStudent Name: " << this->s_Name << endl;
